@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .max-container {
+    @apply max-w-[1100px] w-full px-5 mx-auto;
+  }
+  html {
+    font-family: "Rubik", sans-serif;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+}
